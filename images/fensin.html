@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>website</title>
+
+
+
+    <!-- bootstrap core css -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/style.css" rel="stylesheet" /> -->
+    <!-- responsive style -->
+    <!-- JS style from omid -->
+    <link href="css/exam.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <!-- <link href="css/responsive.css" rel="stylesheet" /> -->
+  </head>
+  <div class="board">
+    <h3 id="time">Süre:</h3>
+    <h3 id="point">Puan:</h3>
+    <p id="qp1"> 1 </p>
+    <p id="qp2">2</p>
+    <p id="qp3">3</p>
+    <p id="qp4">4</p>
+    <p id="qp5">5</p>
+    <p id="qp6">6</p>
+    <p id="qp7">7</p>
+    <p id="qp8">8</p>
+    <!-- <p id="qp9">9</p>
+    <p id="qp10">10</p> -->
+
+
+  </div>
+
+<body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <p id="question">Kumandanın pili bitmiştir. Kumandanın biten pillerini nereye atmalıyız ?</p>
+            <input type="radio" name="q1" value="Çöpe" onclick="control(1,'Çöpe')">Çöpe
+            <input type="radio" name="q1" value="Yere" onclick="control(1,'Yere' )">Yere
+            <input type="radio" name="q1" value="Atık pil kutusuna" onclick="control(1,'Atık pil kutusuna' )">Atık pil kutusuna
+            <p id="question">2.Aşağıda verilen maddelerden hangisi elektriği iletir ??</p>
+
+            <input type="radio" name="q2" value="su" onclick="control(2,'su')" >su
+            <input type="radio" name="q2" value="Plastik" onclick="control(2,'Plastik')">Plastik
+           <input type="radio" name="q2" value="Tahta" onclick="control(2,'Tahta')" >Tahta
+
+                <p id="question">3.Aşağıdakilerden hangisi şehir elektriği ile çalışmaz ?</p>
+                    <input type="radio" name="q3" value="saat" onclick="control(3,'saat')">saat
+                    <input type="radio" name="q3" value="Televizyon" onclick="control(3,'Televizyon')">Televizyon
+                    <input type="radio" name="q3" value="Çamaşır Makinesi" onclick="control(3,'Çamaşır Makinesi')">Çamaşır Makinesi
+                    <p id="question">4.Aşağıdakilerden verilen elektrikli araçlar kullanım alanları ile ilgili  eşleştirmelerden hangisi yanlıştır ?</p>
+                        <input type="radio" name="q4" value="Elektrikli Süpürge Ulaşım " onclick="control(4,'Elektrikli Süpürge Ulaşım ')">Elektrikli Süpürge Ulaşım
+                        <input type="radio" name="q4" value="Çamaşır Makinesi - Temizlik" onclick="control(4,'Çamaşır Makinesi - Temizlik')" >Çamaşır Makinesi - Temizlik
+                        <input type="radio" name="q4" value="Telefon - Haberleşme" onclick="control(4,'Telefon - Haberleşme')">Telefon - Haberleşme
+                        <p id="question">5.Aşağıdakilerden hangisi elektrik üretmez ?</p>
+                            <input type="radio" name="q5" value="El feneri" onclick="control(5,'El feneri')">El feneri
+                            <input type="radio" name="q5" value="Akü" onclick="control(5,'Akü')" >Akü
+                            <input type="radio" name="q5" value="Jeneratör" onclick="control(5,'Jeneratör')">Jeneratör
+                            <p id="question">6.Elektrik kablolarını sudan ve ısıdan _____ tutmalıyız.</p>
+                                <input type="radio" name="q6" value="uzak" onclick="control(6,'uzak')">uzak
+                                <input type="radio" name="q6" value="yakın" onclick="control(6,'yakın' )">yakın
+                                <input type="radio" name="q6" value="sicak" onclick="control(6,'sicak' )">sicak
+                            <p id="question">7.Yırtılmış ya da yıpranmış olan kabloları ve prizleri ________.</p>
+                           <input type="radio" name="q7" value="saklamalıyız" onclick="control(7,'saklamalıyız')" >saklamalıyız
+                            <input type="radio" name="q7" value="kullanmamalıyız" onclick="control(7,'kullanmamalıyız')">kullanmamalıyız
+                             <input type="radio" name="q7" value="kullanmaıyız" onclick="control(7,'kullanmaıyız')" >kullanmaıyız
+                            <p id="question">8.Elektrik çarpması nedir ?</p>
+                            <input type="radio" name="q8" value="Elektriğin kablolardan geçmesidir" onclick="control(8,'Elektriğin kablolardan geçmesidir')" id="girdiler">Elektriğin kablolardan geçmesidir
+                            <input type="radio" name="q8" value="Elektriğin cihazları çalıştırması olayıdır" onclick="control(8,'Elektriğin cihazları çalıştırması olayıdır')" id="girdiler">Elektriğin cihazları çalıştırması olayıdır
+                             <input type="radio" name="q8" value="Elektriğin vücudumuzla temas etmesidir" onclick="control(8,'Elektriğin vücudumuzla temas etmesidir')" id="girdiler">Elektriğin vücudumuzla temas etmesidir
+                            <!--<p id="question">9.soru 3x4-1 cevabı aşağdakilerden hangisidir ??</p>
+                            <input type="radio" name="q9" value="11" onclick="control(9,'11')">11
+                            <input type="radio" name="q9" value="12" onclick="control(9,'12')" >12
+                           <input type="radio" name="q9" value="13" onclick="control(9,'13')">13
+                           <input type="radio" name="q9" value="14" onclick="control(9,'14')" >14
+                            <p id="question">10. 21 -31 cevabı aşağdakilerden hangisidir ?</p>
+                            <input type="radio" name="q10" value="10" onclick="control(10,'10')">10
+                            <input type="radio" name="q10" value="20" onclick="control(10,'20')" >20
+                            <input type="radio" name="q10" value="24" onclick="control(10,'24')">24
+                            <input type="radio" name="q10" value="30" onclick="control(10,'30')" >30 -->
+
+
+<section>
+
+    <script src="css/fensin.js"></script>
+
+  </section>
+
+</body>
+</HTML>

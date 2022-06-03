@@ -1,0 +1,315 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url(../images/body-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.menu-bar{
+  background: rgba(107, 107,107);
+  text-align: center;
+  font-weight: bold;
+}
+.menu-bar ul{
+  /* waxa uu kadhigi joog cml */
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+
+}
+.menu-bar ul li{
+  /* home ve digerler uzakliklari */
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a{
+  /* hoosta ayuu kaxariiqi */
+  text-decoration: none;
+  color: #fff;
+}
+/* home activ yapmak icin */
+/*
+.active, .menu-bar ul li a:hover
+{
+  background-color: #2bab0d;
+  border-radius:3px;
+
+}
+*/
+.sub-menu-1{
+  /* sub-menu alt alt getirmek icin */
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+  /* displaying sub-menu */
+  display: block;
+  position: absolute;
+  background-color: rgba(107, 107,107);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+  /* color: red; */
+  color: green;
+}
+.sub-menu-2{
+  display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+  /* waa home ka sawirada //homedeki icerik duzenliyor */
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: rgba(51, 128,255);
+
+}
+/*
+.top_container::before {
+  content: "";
+  position: absolute;
+  width: 48%;
+  height: 100%;
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.top_container.sub_pages::before {
+  background-size: 400px 200px;
+  background-position: top left;
+}
+*/
+section{
+  background: url(body-bg.jpg) no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  /*background-color: #eee;*/
+  text-align: left;
+  color: #000;
+  /*display: flex;*/
+ margin: 50px 0px 0px 50px
+}
+
+
+/*
+section .panel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .question-container{
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 10vh;
+    background-color: #c7dddf;
+    font-size: x-large;
+    text-align: center;
+
+}
+section .result{
+    margin: 10px;
+    padding: 5px;
+    width:80vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 50px;
+
+}
+section .option-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 20vh;
+    background-color: #9eb1b3;
+
+}
+
+section .option{
+    padding: 10px;
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    background-color: lightskyblue;
+    border-radius: 25%;
+}
+section .option:hover{
+    background-color: lightgoldenrodyellow;
+}
+section .navigation{
+    width: 80vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#c7dddf;
+}
+
+section .evaluate,.next{
+    width:30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: larger;
+}
+section .evaluate{
+
+    background-color: #50DBB4;
+}
+section .next{
+    color: white;
+    background-color: #BF3325;
+} */
+
+
+section .math{
+  margin-top:50px;
+  margin-right: 50px;
+  float: left;
+  text-align: center;
+}
+section .fenbil {
+  margin-top:50px;
+  float: left;
+  margin-right: 50px;
+}
+section .pict {
+  margin-top:50px;
+  float: left;
+  margin-right: 50px;
+}
+section .exampi {
+  margin-top:50px;
+  float: left;
+  margin-right: 50px;
+}
+section .natural {
+  margin-top:0px;
+  float: center;
+  text-align:center;
+}
+section .styled {
+    margin-top:20px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(107, 107, 107, 1);
+    background-image: linear-gradient(to button center,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 60%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+section .styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+section .styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/* for exam css */
+section .question{
+  font-weight: 600;
+}
+section .answers {
+    margin-bottom: 20px;
+}
+section #submit{
+  font-family: sans-serif;
+  font-size: 20px;
+  /* background-color: #297; */
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+section #submit:hover{
+  background-color: #3a8;
+}
+/* h1,h2{
+  text-align: center;
+  color: back;
+} */
+input.answer{
+    text-align: center;
+}
+/* js Omid */
+section .board{
+
+  width: 200px;
+  min-height: 70px;
+  /* min-width: 200px; */
+  background-color:#b8c6db;
+  /* background-color:#DAF7A6; */
+  /* position:fixed; */
+  position: absolute;
+  margin-top: 90px;
+  margin-right: 0px;
+  right: 10px;
+  top:10px;
+    /* background: url(body-bg.jpg) no-repeat; */
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+  border: 10px;
+  border-radius: 10px;
+  border-color: read;
+  text-align: center;
+}
+section .board p{
+  display:inline;
+
+
+  /* background-color: #C0C0C0; */
+
+  margin-left: 15px;
+  padding-right: 5px;
+  padding-right: 5px;
+}
+section #time{
+  margin-top: 30px;
+  text-align:center;
+}
